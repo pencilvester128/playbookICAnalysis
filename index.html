@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Playbook Wealth Partners Growth Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream:#F4F0E8; --navy:#1C2340; --terracotta:#B85C38; --amber:#D4933A; --muted:#6B7280; --card:#F7F5F0; --border:#DDD5C8; --sage:#7BA588;
+      --text-xs:clamp(.75rem,.7rem + .2vw,.875rem); --text-sm:clamp(.9rem,.85rem + .2vw,1rem); --text-base:clamp(1rem,.95rem + .2vw,1.1rem); --text-lg:clamp(1.125rem,1rem + .5vw,1.45rem); --text-xl:clamp(1.5rem,1.2rem + 1vw,2.1rem); --text-2xl:clamp(2rem,1.4rem + 2vw,3.2rem); --text-3xl:clamp(2.8rem,1.4rem + 3vw,4.7rem);
+      --space-2:.5rem; --space-3:.75rem; --space-4:1rem; --space-5:1.25rem; --space-6:1.5rem; --space-8:2rem; --space-10:2.5rem; --space-12:3rem; --space-16:4rem; --space-20:5rem;
+      --shadow:0 10px 30px rgba(28,35,64,.06);
+      --content:1120px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--cream);color:var(--navy);font-family:'Space Grotesk',sans-serif;font-size:var(--text-base);line-height:1.7}
+    img{display:block;max-width:100%}
+    .page{max-width:var(--content);margin:0 auto;padding:0 var(--space-6)}
+    .hero{padding:var(--space-20) 0 var(--space-16);background:radial-gradient(circle at top left,rgba(212,147,58,.12),transparent 32%),radial-gradient(circle at bottom right,rgba(184,92,56,.10),transparent 28%),var(--cream);border-bottom:1px solid var(--border)}
+    .hero-grid{display:grid;grid-template-columns:160px 1fr;gap:var(--space-10);align-items:center}
+    .logo-wrap{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:var(--space-5);box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center}
+    .logo-wrap img{width:100%;height:auto;aspect-ratio:1 / 1;object-fit:contain}
+    .eyebrow{font-size:var(--text-xs);font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--terracotta);margin-bottom:var(--space-4)}
+    h1,h2,h3,h4{font-family:'DM Serif Display',serif;font-weight:400;line-height:1.08;margin:0 0 var(--space-4);text-wrap:balance}
+    h1{font-size:var(--text-3xl);max-width:12ch}
+    h2{font-size:var(--text-2xl)}
+    h3{font-size:var(--text-xl)}
+    p{margin:0 0 var(--space-4);max-width:75ch}
+    .lede{font-size:var(--text-lg);max-width:58ch;color:#34405e}
+    .accent{font-style:italic;background:linear-gradient(135deg,var(--terracotta),var(--amber));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .meta{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:var(--space-6)}
+    .pill{border:1px solid var(--border);background:rgba(184,92,56,.08);padding:.6rem .9rem;border-radius:999px;font-size:var(--text-xs)}
+    section{padding:var(--space-16) 0;border-bottom:1px solid var(--border)}
+    .section-head{margin-bottom:var(--space-8);max-width:78ch}
+    .grid-2,.grid-3{display:grid;gap:var(--space-6)}
+    .grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .card,.callout{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:var(--space-6);box-shadow:0 4px 18px rgba(28,35,64,.03)}
+    .callout{background:linear-gradient(180deg,rgba(184,92,56,.06),rgba(212,147,58,.04))}
+    .quote{font-family:'DM Serif Display',serif;font-style:italic;font-size:clamp(1.5rem,1rem + 1.5vw,2.2rem);color:var(--terracotta);max-width:20ch;line-height:1.2}
+    .stat{background:var(--navy);color:var(--cream);padding:var(--space-6);border-radius:18px}
+    .stat strong{display:block;font-family:'DM Serif Display',serif;font-size:clamp(2.2rem,1.4rem + 1.8vw,3.4rem);font-weight:400;margin-bottom:.35rem}
+    ul{margin:0;padding-left:1.15rem} li{margin-bottom:.7rem}
+    table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--border);border-radius:18px;overflow:hidden} th,td{padding:1rem;vertical-align:top;border-bottom:1px solid var(--border);text-align:left} th{background:var(--navy);color:var(--cream);font-size:var(--text-sm)} td{font-size:var(--text-sm)}
+    .table-wrap{overflow-x:auto}
+    .keep-together,.card,.callout,.table-wrap,.timeline,.step,.print-block{break-inside:avoid;page-break-inside:avoid}
+    .page-break-before{break-before:page;page-break-before:always}
+    .print-block{margin-bottom:var(--space-4)}
+    .page-intro{margin-bottom:var(--space-6)}
+    .offer-box{background:var(--navy);color:var(--cream);border-radius:18px;padding:var(--space-8);border:1px solid rgba(244,240,232,.14)}
+    .offer-box p,.offer-box li{color:rgba(244,240,232,.9)}
+    .offer-box .eyebrow{color:var(--amber)}
+    .offer-box h3{color:var(--cream)}
+    .timeline{display:grid;gap:var(--space-5)}
+    .step{display:grid;grid-template-columns:110px 1fr;gap:var(--space-5);align-items:start;padding-bottom:var(--space-4);border-bottom:1px solid var(--border)}
+    .step:last-child{border-bottom:none;padding-bottom:0}
+    .step-tag{font-size:var(--text-xs);font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--terracotta)}
+    .footer{padding:var(--space-12) 0 var(--space-16);background:var(--navy);color:var(--cream)}
+    .footer p{color:rgba(244,240,232,.8)}
+    .print-btn{position:fixed;right:1rem;bottom:1rem;background:var(--navy);color:var(--cream);padding:.9rem 1rem;border-radius:999px;text-decoration:none;box-shadow:var(--shadow);font-size:var(--text-sm)}
+    @media (max-width:900px){.hero-grid,.grid-2,.grid-3,.step{grid-template-columns:1fr}.logo-wrap{max-width:180px}.print-btn{display:none}}
+    @media print{
+      @page{size:Letter;margin:.55in .6in .65in .6in}
+      .print-btn{display:none}
+      body{background:#fff8f1;font-size:11pt;line-height:1.55}
+      .hero{padding-top:1.2rem;padding-bottom:1.4rem;break-after:page;page-break-after:always}
+      .hero,.section-head,.grid-2,.grid-3,table,tr,td,th,.card,.callout,.offer-box{break-inside:avoid;page-break-inside:avoid}
+      section{padding:1.45rem 0;break-inside:avoid-page;page-break-inside:avoid}
+      .page{max-width:none;padding:0}
+      h2,h3{break-after:avoid;page-break-after:avoid}
+      p,li{orphans:3;widows:3}
+      .grid-2,.grid-3{gap:1rem}
+      .table-wrap{overflow:visible}
+      table{font-size:10pt}
+      .page-break-before-print{break-before:page;page-break-before:always}
+    }
+  </style>
+
+<style>
+.toc-card{position:sticky;top:16px;background:var(--color-card);border:1px solid var(--color-border);border-radius:16px;padding:20px;box-shadow:0 8px 24px rgba(28,35,64,.06)}
+.toc-title{font-family:var(--font-body);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--color-accent);margin-bottom:12px}
+.toc-list{display:grid;gap:10px}
+.toc-list a{display:block;padding:10px 12px;border-radius:12px;color:var(--color-text);text-decoration:none;border:1px solid transparent;background:rgba(184,92,56,.05)}
+.toc-list a:hover{border-color:var(--color-border);background:rgba(184,92,56,.10)}
+.layout-shell{display:grid;grid-template-columns:280px minmax(0,1fr);gap:32px;align-items:start}
+.top-jump{position:fixed;right:20px;bottom:20px;padding:12px 14px;border-radius:999px;background:#1C2340;color:#F4F0E8;text-decoration:none;font-size:14px;box-shadow:0 10px 30px rgba(28,35,64,.18);z-index:40}
+.password-gate{position:fixed;inset:0;background:rgba(244,240,232,.96);display:flex;align-items:center;justify-content:center;padding:24px;z-index:9999}
+.password-panel{max-width:560px;width:100%;background:#F7F5F0;border:1px solid #DDD5C8;border-radius:20px;padding:32px;box-shadow:0 20px 50px rgba(28,35,64,.10)}
+.password-panel h2{margin-bottom:12px}
+.password-row{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
+.password-row input{flex:1;min-width:220px;padding:14px 16px;border-radius:12px;border:1px solid #DDD5C8;background:#fff}
+.password-row button{padding:14px 18px;border-radius:12px;background:#1C2340;color:#F4F0E8;border:none;cursor:pointer}
+.password-note{font-size:14px;color:var(--color-muted);margin-top:10px}
+@media (max-width: 980px){.layout-shell{grid-template-columns:1fr}.toc-card{position:relative;top:0}}
+@media print{.toc-card,.top-jump,.password-gate{display:none!important}.layout-shell{display:block}}
+</style>
+
+</head>
+<body id="top">
+<div class="password-gate" id="passwordGate">
+  <div class="password-panel">
+    <p class="eyebrow">Private prospect brief</p>
+    <h2>Protected access</h2>
+    <p>This page is easy to host as a single file and can be protected with a lightweight password gate for respectful sharing.</p>
+    <div class="password-row">
+      <input type="password" id="sitePassword" placeholder="Enter password">
+      <button id="unlockBtn">Open report</button>
+    </div>
+    <p class="password-note">Default password: <strong>playbook</strong>. Change it in the script before publishing.</p>
+  </div>
+</div>
+  <header class="hero">
+    <div class="page hero-grid">
+<div>
+        <div class="eyebrow">Prepared for Paul Brandwein</div>
+        <h1>You have already built a <span class="accent">strong foundation</span> — this guide shows how to turn it into a more complete lead and nurture system</h1>
+        <p class="lede">Playbook Wealth Partners already has more clarity, depth, and useful educational content than most advisory firms ever publish. The opportunity now is not to reinvent what is working. It is to make your best assets work harder together so more of the right visitors become known leads, better educated prospects, and eventually good-fit clients.</p>
+        <div class="meta">
+          <span class="pill">Focused on amplification, not overhaul</span>
+          <span class="pill">Actionable DIY roadmap included</span>
+          <span class="pill">Built to be useful whether you do it yourself or with help</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+<div class="layout-shell">
+<aside class="toc-card" id="toc">
+<div class="toc-title">Contents</div>
+<nav class="toc-list">
+<a href="#overview">Overview</a>
+<a href="#positioning">Positioning</a>
+<a href="#content-pillars">Content pillars</a>
+<a href="#lead-magnets">Lead magnets</a>
+<a href="#nurture">Nurture system</a>
+<a href="#coi">Referral channels</a>
+<a href="#roadmap">90-day roadmap</a>
+<a href="#next-steps">DIY vs partner</a>
+</nav>
+</aside>
+<div>
+
+    <section id="overview">
+      <div class="page">
+        <div class="section-head">
+          <div class="eyebrow">Executive summary</div>
+          <h2>What is already working exceptionally well</h2>
+          <p>Your site already does several things unusually well for an independent advisor. It has a clear point of view, strong long-form educational content, genuinely useful calculators, detailed case studies, transparent pricing, and a founder story that makes the brand feel human instead of generic.</p>
+        </div>
+        <div class="grid-3">
+          <div class="stat"><strong>Strong</strong><span>Your positioning is already differentiated: tax-efficient playbooks for people who made a lot of money in one thing.</span></div>
+          <div class="stat"><strong>Rare</strong><span>The free guides, calculators, glossary, and pricing transparency create trust faster than most competitors can.</span></div>
+          <div class="stat"><strong>Next</strong><span>The highest-leverage move now is connecting those tools into a cleaner capture, segmentation, and nurture system.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="positioning">
+      <div class="page grid-2" style="align-items:start">
+        <div>
+          <div class="eyebrow">What you got right</div>
+          <h2>Your site already feels like a real operating philosophy, not just a marketing site</h2>
+          <p>The strongest part of Playbook Wealth Partners is that the positioning is coherent across all three pillars. Concentrated stock, business exits, and real estate exits all roll up into one core problem: someone built meaningful wealth in one concentrated asset and now needs a tax-efficient way to protect it and move forward.</p>
+          <p>That makes the entire brand feel more thoughtful than a typical multi-service advisory site. The message is not “we do a lot of things.” The message is “we solve a very specific type of wealth problem in several related contexts.” That is a real strategic advantage.</p>
+        </div>
+        <div class="callout">
+          <div class="eyebrow">Core positioning to preserve</div>
+          <p class="quote">“We build tax-efficient playbooks for people who have made a lot of money in one thing.”</p>
+          <p>This line is a keeper. It is broad enough to unify the three niches and specific enough to make the right person feel seen quickly.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="page">
+        <div class="section-head">
+          <div class="eyebrow">Existing strengths</div>
+          <h2>The assets you already have are better than most firms ever build</h2>
+          <p>The right next move starts by acknowledging that you are not starting from zero. You already built the hard part: expertise translated into useful public-facing assets.</p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Asset</th><th>What is already strong</th><th>Why it matters</th></tr></thead>
+            <tbody>
+              <tr><td>Three long-form guides</td><td>They are specific, plain-English, and strategy-rich.</td><td>They create trust and give serious prospects a reason to stay and think.</td></tr>
+              <tr><td>Three calculators</td><td>They are genuinely useful and help visitors run their own numbers.</td><td>They attract high-intent users who are actively trying to make a decision.</td></tr>
+              <tr><td>Case studies</td><td>They make the planning process tangible and easier to imagine.</td><td>They help prospects see how your process works in real-life situations.</td></tr>
+              <tr><td>Glossary and resources</td><td>They lower the intimidation factor around technical concepts.</td><td>They make the site feel educational and confidence-building.</td></tr>
+              <tr><td>Transparent pricing</td><td>It is rare, clear, and trust-building.</td><td>It removes friction and signals confidence.</td></tr>
+              <tr><td>Founder story</td><td>It is personal, credible, and unusually human for the industry.</td><td>It gives you a strong voice for LinkedIn and follow-up communication.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="page">
+        <div class="section-head">
+          <div class="eyebrow">Main opportunity</div>
+          <h2>The next move is to turn your free tools into a more intentional lead magnet system</h2>
+          <p>Right now, your site does an excellent job educating and building trust. The opportunity is to make that education lead somewhere more clearly. In other words, your tools should not only help visitors; they should also help you identify who those visitors are, what problem they care about, and what kind of follow-up will feel most relevant.</p>
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <h3>What to preserve</h3>
+            <ul>
+              <li>The calm, intelligent, no-hype tone of the site.</li>
+              <li>The practical “playbook” framing that makes the process feel usable.</li>
+              <li>The depth of the guides and calculators.</li>
+              <li>The way the site already speaks directly to real concentration problems.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>What to add</h3>
+            <ul>
+              <li>Stronger email capture around guides and calculators.</li>
+              <li>Clear segmentation by problem type.</li>
+              <li>Pillar-specific educational follow-up after someone opts in.</li>
+              <li>A simple path from “I found this useful” to “I should talk to Paul.”</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="keep-together" id="lead-magnets">
+      <div class="page">
+        <div class="section-head">
+          <div class="eyebrow">Sample copy</div>
+          <h2>One example of stronger lead magnet packaging</h2>
+          <p>This is one example of how the existing concentrated stock guide could be framed more explicitly as a lead magnet without losing the calm, straightforward tone that already makes the site work.</p>
+        </div>
+        <div class="callout">
+          <div class="eyebrow">Sample guide copy</div>
+          <h3>The Concentrated Stock Playbook</h3>
+          <p><strong>A clear, practical guide for people who know they need to diversify but do not want to trigger a major tax mistake.</strong></p>
+          <p>If a large portion of your net worth is tied up in one stock, you already know the problem. The risk is real, but so is the tax bill. That tension is what keeps most people stuck.</p>
+          <p>This guide walks through the actual options in plain English — how to protect the downside, how to think about taxes, and how strategies like collars, prepaid forwards, and tax-loss harvesting can work together as part of a real plan.</p>
+          <p>No fluff. No hype. Just a better framework for making a high-stakes decision.</p>
+          <p><em>Enter your email and the guide will go straight to your inbox. No spam. Just the playbook — and a few follow-up notes to help you make sense of it.</em></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="keep-together" id="nurture">
+      <div class="page grid-2" style="align-items:start">
+        <div>
+          <div class="eyebrow">Sample nurture email</div>
+          <h2>One email that would fit your current voice</h2>
+          <p>This example is written to sound closer to the tone already present across the site: clear, plainspoken, thoughtful, and low-pressure.</p>
+        </div>
+        <div class="callout">
+          <div class="eyebrow">Email 2 of a guide sequence</div>
+          <h3>Subject: The tax bill is not the only risk</h3>
+          <p>Paul, one of the most common patterns in concentrated stock situations is that the tax bill becomes so intimidating that it turns into the only thing people can see.</p>
+          <p>That makes sense. Nobody wants to trigger a large gain unnecessarily. But doing nothing has a cost too, especially when one position has become a meaningful part of your balance sheet.</p>
+          <p>The real question usually is not “Should I sell everything right now?” It is “How do I reduce risk in a way that is thoughtful, tax-aware, and realistic for my situation?”</p>
+          <p>That is the reason the playbook matters. The answer is often not one move. It is a sequence.</p>
+          <p>If you want, reply and tell me what kind of position you are dealing with. I am happy to point you toward the part of the framework that is most relevant.</p>
+          <p>— Paul</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="keep-together page-break-before-print">
+      <div class="page">
+        <div class="section-head page-intro">
+          <div class="eyebrow">One more useful sample</div>
+          <h2>A simple nurture sequence you could send after the guide</h2>
+          <p>If you want the site to feel even more helpful, the follow-up does not have to be complicated. A short sequence that educates, clarifies, and invites a reply is enough to move someone from curiosity to confidence.</p>
+        </div>
+        <div class="grid-2 print-block">
+          <div class="card">
+            <div class="eyebrow">Suggested sequence</div>
+            <h3>Five-email structure</h3>
+            <ul>
+              <li>Email 1: Deliver the guide and explain how to read it.</li>
+              <li>Email 2: Reframe the main risk and reduce overwhelm.</li>
+              <li>Email 3: Clarify one common misconception that causes people to wait.</li>
+              <li>Email 4: Walk through a realistic case-study-style example.</li>
+              <li>Email 5: Invite a low-pressure reply or second-opinion conversation.</li>
+            </ul>
+          </div>
+          <div class="callout">
+            <div class="eyebrow">Sample email 1</div>
+            <h3>Subject: Here is the playbook</h3>
+            <p>Thanks for requesting the guide. I put it together for people who know they should probably do something, but do not want to make a rushed decision that creates unnecessary taxes or regret.</p>
+            <p>My suggestion: do not try to read it all at once. Start with the sections that sound most like your situation, then come back to the strategy comparison later.</p>
+            <p>Over the next few days, I will send a few short notes to help make the guide more useful in the real world. No spam. Just context that should make the decisions feel less murky.</p>
+            <p>And if you ever want to sanity-check what you are seeing, you can just reply to this email.</p>
+            <p>— Paul</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="keep-together">
+      <div class="page">
+        <div class="section-head page-intro">
+          <div class="eyebrow">A gentle thank-you</div>
+          <h2>A friendly offer you could include because of the group introduction</h2>
+          <p>This should feel appreciative and useful, not salesy. The goal is to reward the warm introduction with something thoughtful that lowers friction and gives the prospect one easy next step.</p>
+        </div>
+        <div class="offer-box print-block">
+          <div class="eyebrow">Optional note from Christopher</div>
+          <h3>Thanks again for being open to the introduction</h3>
+          <p>Paul, thanks again for taking a look at this and for being open to the group intro. I wanted to leave you with something useful whether we ever work together or not.</p>
+          <p>If it would be helpful, I am happy to take one asset you already have — a guide, calculator flow, or nurture sequence — and map out one clean improvement path for it at no cost. Nothing big, just one practical next step you could either implement yourself or use as a starting point for future work.</p>
+          <p>My thought is simple: if this is already helpful on its own, great. And if you decide you would rather have someone help bring it to life, you will have a much clearer picture of what that partnership could look like.</p>
+        </div>
+      </div>
+    </section>
+
+<section>
+      <div class="page">
+        <div class="section-head">
+          <div class="eyebrow">Recommended lead magnets</div>
+          <h2>How to use what you already built as true lead magnets</h2>
+          <p>The strongest version of your lead magnet system probably does not require building a pile of new content. It is mostly a packaging and sequencing exercise around the assets you already have.</p>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Guide-first path</h3>
+            <p>Keep each pillar guide as the anchor asset, but make the value exchange clearer. The opt-in should promise a useful download plus a short follow-up series that helps the reader apply what they just learned.</p>
+          </div>
+          <div class="card">
+            <h3>Calculator-first path</h3>
+            <p>Add an email capture at the results stage for visitors who want their numbers saved, interpreted, or followed by a short educational series tied to that exact calculator.</p>
+          </div>
+          <div class="card">
+            <h3>Second-opinion path</h3>
+            <p>Offer a low-pressure “second opinion” CTA after the guide or calculator result. This fits your existing tone because it feels helpful and calm rather than promotional.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="page">
+        <div class="section-head">
+          <div class="eyebrow">Suggested nurture tracks</div>
+          <h2>Two educational series that would amplify what is already on the site</h2>
+          <p>You do not need an elaborate funnel to make this work. A short, thoughtful sequence in your voice would go a long way because the site already has enough substance to support it.</p>
+        </div>
+        <div class="grid-2">
+          <div class="callout">
+            <div class="eyebrow">Series 1</div>
+            <h3>The guide follow-up series</h3>
+            <p>This sequence is for someone who downloaded one of the three guides and needs help moving from understanding to action.</p>
+            <ul>
+              <li>Email 1: Deliver the guide and explain how to use it.</li>
+              <li>Email 2: The cost of waiting too long to address concentration risk.</li>
+              <li>Email 3: One planning misconception that causes people to stall.</li>
+              <li>Email 4: A short walk-through of the most relevant strategies.</li>
+              <li>Email 5: A case study that mirrors the reader’s situation.</li>
+              <li>Email 6: A low-pressure invitation to get a second opinion.</li>
+            </ul>
+          </div>
+          <div class="callout">
+            <div class="eyebrow">Series 2</div>
+            <h3>The calculator follow-up series</h3>
+            <p>This sequence is for someone who ran their numbers and is already showing higher intent. It should connect what they saw in the calculator to the broader planning process.</p>
+            <ul>
+              <li>Email 1: Here is what your results are really telling you.</li>
+              <li>Email 2: Why tax pain and decision paralysis often go together.</li>
+              <li>Email 3: The sequence matters more than the individual tactic.</li>
+              <li>Email 4: The questions worth answering before making a move.</li>
+              <li>Email 5: A short invitation to review the numbers together.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="page grid-2" style="align-items:start">
+        <div>
+          <div class="eyebrow">Segmentation</div>
+          <h2>A simple intake quiz could make your follow-up much smarter</h2>
+          <p>One of the easiest upgrades would be a short “Which playbook fits you best?” quiz. It would not replace your current resources. It would simply help route people toward the most relevant guide, calculator, and follow-up sequence.</p>
+          <ul>
+            <li>Question 1: Which situation sounds most like yours?</li>
+            <li>Question 2: Roughly how large is the position, portfolio, or expected exit?</li>
+            <li>Question 3: What is your likely timeline?</li>
+            <li>Question 4: What is the main thing stopping you from acting?</li>
+            <li>Question 5: Would a free second-opinion conversation be helpful?</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Why this helps</h3>
+          <ul>
+            <li>It gives you clearer context before a call.</li>
+            <li>It makes follow-up more personal and relevant.</li>
+            <li>It helps separate casual browsers from higher-intent prospects.</li>
+            <li>It creates a better experience without changing your voice or brand.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="page">
+        <div class="section-head">
+          <div class="eyebrow">DIY roadmap</div>
+          <h2>A realistic way to do this yourself over 60 days</h2>
+          <p>If you wanted to improve the system without turning it into a giant project, this is a clean sequence that builds on what already exists.</p>
+        </div>
+        <div class="timeline">
+          <div class="step"><div class="step-tag">Weeks 1–2</div><div><h3>Audit the current paths</h3><p>Map every way a visitor can move through the site today: homepage, guide pages, calculators, case studies, resources, scheduler, and contact points. Decide where email capture should happen and where it should stay optional.</p></div></div>
+          <div class="step"><div class="step-tag">Weeks 2–3</div><div><h3>Tighten the offers</h3><p>Refine the opt-in language for the three guides and add a clear value statement to the calculators at the results stage. The goal is to make the next step feel useful, not pushy.</p></div></div>
+          <div class="step"><div class="step-tag">Weeks 3–5</div><div><h3>Write two short nurture series</h3><p>Start with one guide-based sequence and one calculator-based sequence. You can later split them into pillar-specific variants once the basic structure proves useful.</p></div></div>
+          <div class="step"><div class="step-tag">Weeks 5–6</div><div><h3>Add simple segmentation</h3><p>Use a short intake quiz or form logic to tag visitors by concentrated stock, business exit, or real estate exit. Keep it short and easy to complete.</p></div></div>
+          <div class="step"><div class="step-tag">Weeks 6–8</div><div><h3>Connect to scheduling</h3><p>Make sure the nurture sequences and calculator follow-up naturally point toward a low-pressure second-opinion call for people who want help applying what they learned.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="page">
+        <div class="section-head">
+          <div class="eyebrow">Priority task list</div>
+          <h2>If only three things happen next, make them these</h2>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <h3>1. Add smarter capture</h3>
+            <p>Make the guides and calculators work as clear opt-in points with relevant follow-up tied to what the visitor actually used.</p>
+          </div>
+          <div class="card">
+            <h3>2. Build nurture in your voice</h3>
+            <p>Create short educational sequences that sound like you and deepen trust after someone downloads or calculates.</p>
+          </div>
+          <div class="card">
+            <h3>3. Create a second-opinion bridge</h3>
+            <p>Give readers a natural next step when they are ready to move from self-education into a personalized conversation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="keep-together">
+      <div class="page grid-2" style="align-items:start">
+        <div>
+          <div class="eyebrow">Support if useful</div>
+          <h2>This can absolutely be done internally — and I would also be glad to help as a thank you</h2>
+          <p>This report is meant to be useful on its own. If you want to work through the improvements yourself, the roadmap above is a very realistic place to start. If it would be helpful to have another set of hands on the buildout, I would also be glad to help shape some of this with you.</p>
+          <p>Given the introduction to your professional network, I would be happy to contribute to some of the implementation as a thank-you favor — especially around packaging the lead magnets, outlining or drafting nurture emails, and tightening the conversion path around the tools you already built.</p>
+        </div>
+        <div class="callout">
+          <div class="eyebrow">Friendly offer</div>
+          <p class="quote">You already did the hard part. If it is useful, I would be glad to help connect the pieces and make the system feel more complete.</p>
+          <p>No pressure at all. This is simply an open offer if having help behind the scenes would save you time or help you move faster.</p>
+        </div>
+      </div>
+    </section>
+  
+</div>
+</div>
+<a class="top-jump" href="#toc">Back to contents</a>
+</main>
+
+  <footer class="footer">
+    <div class="page">
+      <div class="eyebrow" style="color:var(--amber)">Final takeaway</div>
+      <h3 style="color:var(--cream);max-width:19ch">You already have the substance. The next win is making the system around it more intentional.</h3>
+      <p>The strongest version of this business does not need more noise. It needs a tighter path from education to trust to conversation.</p>
+    </div>
+  </footer>
+
+  <a class="print-btn" href="javascript:window.print()">Print / Save PDF</a>
+
+<script>
+(function(){
+  const gate=document.getElementById('passwordGate');
+  const input=document.getElementById('sitePassword');
+  const btn=document.getElementById('unlockBtn');
+  const PASSWORD='playbook';
+  function unlock(){ if((input.value||'').trim()===PASSWORD){ gate.style.display='none'; } else { input.setAttribute('aria-invalid','true'); input.value=''; input.placeholder='Incorrect password'; } }
+  btn&&btn.addEventListener('click',unlock);
+  input&&input.addEventListener('keydown',e=>{ if(e.key==='Enter') unlock(); });
+  document.querySelectorAll('.toc-list a').forEach(a=>a.addEventListener('click',e=>{
+    const id=a.getAttribute('href'); const el=document.querySelector(id); if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth',block:'start'}); }
+  }));
+})();
+</script>
+
+</body>
+</html>
