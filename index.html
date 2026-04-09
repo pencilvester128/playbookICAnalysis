@@ -100,18 +100,6 @@
 
 </head>
 <body id="top">
-<div class="password-gate" id="passwordGate">
-  <div class="password-panel">
-    <p class="eyebrow">Private prospect brief</p>
-    <h2>Protected access</h2>
-    <p>This page is easy to host as a single file and can be protected with a lightweight password gate for respectful sharing.</p>
-    <div class="password-row">
-      <input type="password" id="sitePassword" placeholder="Enter password">
-      <button id="unlockBtn">Open report</button>
-    </div>
-    <p class="password-note">Default password: <strong>playbook</strong>. Change it in the script before publishing.</p>
-  </div>
-</div>
   <header class="hero">
     <div class="page hero-grid">
 <div>
@@ -477,13 +465,6 @@
 
 <script>
 (function(){
-  const gate=document.getElementById('passwordGate');
-  const input=document.getElementById('sitePassword');
-  const btn=document.getElementById('unlockBtn');
-  const PASSWORD='playbook';
-  function unlock(){ if((input.value||'').trim()===PASSWORD){ gate.style.display='none'; } else { input.setAttribute('aria-invalid','true'); input.value=''; input.placeholder='Incorrect password'; } }
-  btn&&btn.addEventListener('click',unlock);
-  input&&input.addEventListener('keydown',e=>{ if(e.key==='Enter') unlock(); });
   document.querySelectorAll('.toc-list a').forEach(a=>a.addEventListener('click',e=>{
     const id=a.getAttribute('href'); const el=document.querySelector(id); if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth',block:'start'}); }
   }));
